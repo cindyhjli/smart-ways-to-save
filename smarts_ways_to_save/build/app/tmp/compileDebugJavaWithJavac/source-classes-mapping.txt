@@ -1,4 +1,0 @@
-io/flutter/plugins/GeneratedPluginRegistrant.java
- io.flutter.plugins.GeneratedPluginRegistrant
-com/example/smarts_ways_to_save/BuildConfig.java
- com.example.smarts_ways_to_save.BuildConfig
