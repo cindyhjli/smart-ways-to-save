@@ -1,6 +1,6 @@
 {
-    "name": "smartwaystosave",
-    "short_name": "smartwaystosave",
+    "name": "smart_ways_to_save",
+    "short_name": "smart_ways_to_save",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

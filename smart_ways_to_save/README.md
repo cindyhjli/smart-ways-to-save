@@ -1,4 +1,4 @@
-# smartwaystosave
+# smart_ways_to_save
 
 A new Flutter project.
 
