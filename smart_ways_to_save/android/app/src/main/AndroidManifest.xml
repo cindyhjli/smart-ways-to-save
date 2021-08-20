@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.smartwaystosave">
+    package="com.example.smart_ways_to_save">
    <application
-        android:label="smartwaystosave"
+        android:label="smart_ways_to_save"
         android:icon="@mipmap/ic_launcher">
         <activity
             android:name=".MainActivity"
