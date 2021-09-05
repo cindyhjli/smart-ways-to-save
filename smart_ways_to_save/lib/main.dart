@@ -9,7 +9,7 @@ class Test extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      // theme: ThemeData(fontFamily: GoogleFonts.montserrat().fontFamily),
+      theme: ThemeData(fontFamily: GoogleFonts.montserrat().fontFamily),
       debugShowCheckedModeBanner: false,
       debugShowMaterialGrid: false,
       home: Home(),
