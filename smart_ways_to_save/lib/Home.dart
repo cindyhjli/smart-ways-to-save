@@ -21,15 +21,26 @@ class _Home extends State<Home> {
 }
 
 Widget logo() {
-  return Image(
-    image: AssetImage("lib/assets/logo.png")
+  return Container(
+    width: 200,
+    height: 200,
+    decoration: BoxDecoration(
+      image: DecorationImage(
+        image: AssetImage("lib/assets/logo.png"),
+      )
+    )
   );
 }
 
 Widget title() {
-  return Text(
-    "SMART\nWAYS TO\nSAVE",
-    style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold, color: Colors.blue),
+  return Row(
+    mainAxisAlignment: MainAxisAlignment.center,
+    children: [
+      Text(
+        "SMART\nWAYS TO\nSAVE",
+        style: TextStyle(fontSize: 50, fontWeight: FontWeight.bold, color: Colors.blue),
+      ),
+    ],
   );
 }
 
