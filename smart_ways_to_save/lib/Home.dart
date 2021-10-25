@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:smart_ways_to_save/routeGenerator.dart';
+// import 'package:smart_ways_to_save/routeGenerator.dart';
 
 class Home extends StatefulWidget {
   @override
@@ -14,7 +14,7 @@ class _Home extends State<Home> {
       child: ListView(
         children: [
           SizedBox(height: 30),
-          logo(),
+          logo(), 
           title(),
           SizedBox(height: 25),
           play(),
