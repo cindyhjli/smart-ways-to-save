@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-// import 'package:smart_ways_to_save/routeGenerator.dart';
+import 'Trash1.dart';
 
 class Home extends StatefulWidget {
   @override
@@ -9,16 +9,24 @@ class Home extends StatefulWidget {
 class _Home extends State<Home> {
   @override
   Widget build(BuildContext context) {
-    return Container(
-      color: Colors.lightBlue.shade50,
-      child: ListView(
-        children: [
-          SizedBox(height: 30),
-          logo(), 
-          title(),
-          SizedBox(height: 25),
-          play(),
-        ],  
+    return Scaffold(
+      appBar: AppBar(
+        backgroundColor: Colors.lightBlue.shade50,
+        leading: IconButton(
+          icon: Icon(Icons.menu, size: 40, color: Colors.black,),
+          onPressed: null,
+        ),
+      ),
+      body: Container(
+        color: Colors.lightBlue.shade50,
+        child: ListView(
+          children: [
+            logo(),
+            title(),
+            SizedBox(height: 25),
+            play(),
+          ],  
+        ),
       ),
     ); 
   }
@@ -72,10 +80,10 @@ class _Home extends State<Home> {
     return Container(
       padding: EdgeInsets.symmetric(horizontal: 85),
       child: TextButton(
-        onPressed: () => Navigator.of(context).pushNamed(RouteGenerator.getRandomLevel()),
+        onPressed: onPressed1,
         child: Text(
           "PLAY",
-          style: TextStyle(fontSize: 45, color: Colors.white)
+          style: TextStyle(fontSize: 45, fontWeight: FontWeight.bold, color: Colors.white)
         ),
         style: ButtonStyle(
           backgroundColor: MaterialStateProperty.all<Color>(Colors.green.shade600),
@@ -85,5 +93,13 @@ class _Home extends State<Home> {
         )
       )
     );
+  }
+
+  void onPressed1() {
+    Navigator.of(context).pushAndRemoveUntil(
+      PageRouteBuilder(
+        pageBuilder: (context, animation, animation2) => Trash1(),
+        transitionDuration: Duration(seconds: 0)),
+      (route) => false);
   }
 }
